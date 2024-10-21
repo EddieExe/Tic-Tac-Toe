@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a855f7;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+main {
+    padding: 30px;
+}
+
+main h1 {
+    font-size: 50px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #e9d5ff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.game-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 30vw;
+    height: 45vh;
+}
+
+.gameBox {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    font-size: 50px;
+    color: #a855f7;
+    background-color: #d8b4fe;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gameBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.reset-game-btn, .new-game-btn {
+    font-family: "Chakra Petch", sans-serif;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #d8b4fe;
+    color: #a855f7;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.2s;
+}
+
+.reset-game-btn:hover, .new-game-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.reset-game-btn:active, .new-game-btn:active {
+    background-color: #e9d5ff;
+}
+
+.message {
+    color: white;
+    font-size: 24px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.win-message {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
